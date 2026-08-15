@@ -1,0 +1,58 @@
+import {
+  Dumbbell,
+  BookOpen,
+  HeartPulse,
+  Code2,
+  Brain,
+  Briefcase,
+  Sparkles,
+  Flame,
+  Zap,
+  Sun,
+  SunMedium,
+  Moon,
+  Trophy,
+  CheckSquare,
+  Calendar,
+  BarChart3,
+  Settings,
+  User,
+  Shield,
+  Award,
+  Crown,
+  Link as LinkIcon,
+  Skull,
+  ShieldAlert,
+} from 'lucide-react';
+
+const ICON_MAP = {
+  Dumbbell,
+  BookOpen,
+  HeartPulse,
+  Code2,
+  Brain,
+  Briefcase,
+  Sparkles,
+  Flame,
+  Zap,
+  Sun,
+  SunMedium,
+  Moon,
+  Trophy,
+  CheckSquare,
+  Calendar,
+  BarChart3,
+  Settings,
+  User,
+  Shield,
+  Award,
+  Crown,
+  Link: LinkIcon,
+  Skull,
+  ShieldAlert,
+};
+
+export default function CategoryIcon({ iconName, size = 18, color = 'currentColor', className = '' }) {
+  const IconComponent = ICON_MAP[iconName] || Sparkles;
+  return <IconComponent size={size} color={color} className={`vector-icon ${className}`} />;
+}

@@ -1,0 +1,17 @@
+{
+  "short_name": "Ignite Habits",
+  "name": "Ignite Habits — Professional Habit Tracker",
+  "icons": [
+    {
+      "src": "skull.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0a0a0f",
+  "theme_color": "#ff4500",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "description": "Professional dark-mode habit & daily routine tracker with flame aesthetics."
+}
